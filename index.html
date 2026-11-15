@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>4-Bit ALU Simulator - IC 74181</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>4-Bit ALU Simulator</h1>
+        <p>Based on IC 74181</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Input Values</h2>
+
+            <label for="inputA">Input A (4-bit):</label>
+            <input type="text" id="inputA"
+                   maxlength="4" placeholder="Example: 1010">
+
+            <label for="inputB">Input B (4-bit):</label>
+            <input type="text" id="inputB"
+                   maxlength="4" placeholder="Example: 0011">
+        </section>
+
+        <section>
+            <h2>Control Inputs</h2>
+
+            <label for="mode">Mode (M):</label>
+            <select id="mode">
+                <option value="0">Arithmetic</option>
+                <option value="1">Logic</option>
+            </select>
+
+            <label for="function">Function Select (S3 S2 S1 S0):</label>
+            <select id="function">
+                <option value="0000">0000</option>
+                <option value="0001">0001</option>
+                <option value="0010">0010</option>
+                <option value="0011">0011</option>
+                <option value="0100">0100</option>
+                <option value="0101">0101</option>
+                <option value="0110">0110</option>
+                <option value="0111">0111</option>
+                <option value="1000">1000</option>
+                <option value="1001">1001</option>
+                <option value="1010">1010</option>
+                <option value="1011">1011</option>
+                <option value="1100">1100</option>
+                <option value="1101">1101</option>
+                <option value="1110">1110</option>
+                <option value="1111">1111</option>
+            </select>
+
+            <label for="carryIn">
+                Carry Input (Cn bar - Active LOW):
+            </label>
+
+            <select id="carryIn">
+                <option value="0">0 - Carry enabled</option>
+                <option value="1">1 - No carry</option>
+            </select>
+        </section>
+
+        <section>
+            <h2>Output</h2>
+
+            <p>Result (F): <span id="result">----</span></p>
+
+            <p>Carry Output:
+                <span id="carryOut">-</span>
+            </p>
+
+            <p id="message">Enter inputs to begin.</p>
+        </section>
+
+        <button id="calculateButton">
+            Execute Operation
+        </button>
+
+    </main>
+
+    <footer>
+        <p>Digital Logic and Computer Organization Project</p>
+    </footer>
+
+</body>
+</html>

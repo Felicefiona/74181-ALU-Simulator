@@ -1,0 +1,139 @@
+
+/* General page styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    color: #263445;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background: #172b4d;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 17px;
+    color: #cbd5e1;
+}
+
+/* Main container */
+main {
+    width: 90%;
+    max-width: 750px;
+    margin: 30px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Sections */
+section {
+    background: #f8fafc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #dbe3ed;
+}
+
+section h2 {
+    color: #172b4d;
+    margin-bottom: 18px;
+    font-size: 21px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+/* Input and dropdown fields */
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #b8c5d6;
+    border-radius: 6px;
+    font-size: 16px;
+    background: white;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #3978c5;
+    border-color: #3978c5;
+}
+
+/* Output */
+section p {
+    margin: 12px 0;
+    font-size: 17px;
+}
+
+#result,
+#carryOut {
+    font-weight: bold;
+    color: #176b45;
+}
+
+/* Execute button */
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: #2463a6;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #174b83;
+}
+
+/* Message */
+#message {
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* Mobile screen */
+@media (max-width: 600px) {
+    main {
+        width: 94%;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+}
